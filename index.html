@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <a href="#">Welcome</a>
+        </div>
+
+        <div class="right">
+            <a href="#skills" class="active">
+                <i class="fa-solid fa-code"></i>
+                <span>Skills</span>
+            </a>
+
+            <a href="#projects">
+                <i class="fa-solid fa-pen"></i>
+                <span>Projects</span>
+            </a>
+
+            <a href="#contact">
+                <i class="fa-solid fa-address-book"></i>
+                <span>Contact</span>
+            </a>
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <div class="text">
+                <h2>Hi, I'm Istiak.</h2>
+                <p>I'm a full-stack web developer with a passion for Linux. I specialize in both front-end and back-end
+                    development, working with technologies like ReactJS & Django.</p>
+
+                <div class="links">
+                    <a href="https://github.com/Istiak77" target="_blank" class="social-link">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/istiak-ahamod-6a4a812a8" target="_blank" class="social-link">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:ahmedpranto666@gmail.com" target="_blank" class="social-link">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="headshot">
+                <img src="images/profile.jpg" alt="profile">
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                I'm currently learning web development and exploring technologies like ReactJS, Django, and MySQL. I
+                enjoy building small projects to understand how both the front-end and back-end work together. I'm also
+                interested in how databases power applications and how to create better user experiences. As a Linux
+                enthusiast, I've been learning to use it as my main development environment and love finding ways to
+                improve my workflow.</div>
+
+            <div class="cells">
+                <div class="cell">
+                    <img src="images/html-logo.webp" alt="html logo">
+                    <span>HTML</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/css-logo.webp" alt="css logo">
+                    <span>CSS</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/javascript-logo.webp" alt="js logo">
+                    <span>Javascript</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/react-logo.webp" alt="react logo">
+                    <span>ReactJS</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/django-logo.png" alt="django logo">
+                    <span>Django</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="showcase">
+            <h2>My Projects</h2>
+            <div class="blocks">
+                <!-- Project 1 -->
+                <div class="block">
+                    <div class="project-info">
+                        <a href="https://github.com/Istiak77/Student-Management" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>Student Management</span>
+                        </a>
+                    </div>
+                    <img src="images/student.png" alt="SM" class="project-image">
+                </div>
+
+                <!-- Project 2 -->
+                <div class="block">
+                    <div class="project-info">
+                        <a href="https://github.com/Istiak77/Todo-App" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>Todo App</span>
+                        </a>
+                    </div>
+                    <img src="images/todo.png" alt="Todo-App" class="project-image">
+                </div>
+
+                <!-- Project 3 -->
+                <div class="block">
+                    <div class="project-info">
+                        <a href="https://github.com/Istiak77/FoodApp_django" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>Food App</span>
+                        </a>
+                    </div>
+                    <img src="images/food.png" alt="FA" class="project-image">
+                </div>
+
+                <!-- Project 4 -->
+                <div class="block">
+                    <div class="project-info">
+                        <a href="https://istiak77.github.io/E-commerce/" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>E-commerce(Front-End)</span>
+                        </a>
+                    </div>
+                    <img src="images/ecom.png" alt="FA" class="project-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+
+            <div class="group">
+                <div class="text">
+                    If you would like to hire me you can contact with me through the site.
+                </div>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your email">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 My Portfolio. All Rights Reserved</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
